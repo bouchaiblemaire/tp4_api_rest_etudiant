@@ -2,7 +2,7 @@
 
 if [ ! $# -eq 1 ] 
 then
-  echo usage : run_script.sh nom_du_conteneur_postgresql
+  echo usage : run_script_bd.sh nom_du_conteneur_postgresql
   echo nom_du_conteneur_postgresql : nom du conteneur hébergeant le serveur de base de données PostgreSQL
   exit 1
 fi
