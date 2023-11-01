@@ -7,7 +7,7 @@ then
   exit 1
 fi
 
-docker exec $1  bash -c "curl -O -L https://einfo-learning.fr/partages/dev_avance/employee_bd.sql.tar.gz &&\
+docker exec $1  bash -c "curl -O -L http://einfo-learning.fr/partages/dev_avance/employee_bd.sql.tar.gz &&\
 tar xvfz employee_bd.sql.tar.gz && PGPASSWORD=password psql \
   -h 127.0.0.1 \
   -p 5432 \
