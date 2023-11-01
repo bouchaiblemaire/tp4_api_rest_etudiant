@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>API REST</h1><br>
+        <strong>URL de l'API REST: </strong><code>IP_SERVEUR:port/tp_api_rest/api/employees</code>
+
+        <ul>
+            <li>Liste tous les employées(JSON)<br><!-- comment -->
+                <ul><li><strong>Méthode :</strong> <code>GET</code>, <strong>chemin:</strong><code>/</code></li>
+                    <li><strong>Réponse</strong> : Format JSON</li>
+                </ul>
+            </li>
+            <li>Information de l'employée d'identifiant id<br><!-- comment -->
+                <ul><li><strong>Méthode :</strong><code>GET</code>, <strong>chemin:</strong><code>/id</code></li>
+                    <li>Réponse : Format JSON</li>
+                </ul><!-- comment -->
+            </li>      
+            
+             <li>Création d'un employée<br><!-- comment -->
+                 <ul><li><strong>Méthode :</strong><code>POST</code>,<strong>chemin:</strong><code>/</code></li>        
+                    <li>Information au format JSON de l'employée à créer avec le même format que ceux renvoyé par le serveur.</li>
+                    <li><strong>Réponse</strong> : Format JSON</li>
+                </ul><!-- comment -->
+            </li>
+               <li>Mise à jour d'un employée<br><!-- comment -->
+                 <ul><li><strong>Méthode :</strong><code>PUT</code>,<strong>chemin:</strong><code>/</code></li>        
+                     <li>Information au format JSON de l'employée à mettre à jour, même format que ceux renvoyé par le serveur
+                         complété avec l'<code>id</code> de l'employée à mettre à jour.</li>
+                     <li><strong>Réponse</strong> : Format JSON</li>
+                </ul><!-- comment -->
+            </li>
+             <li>Suppression d'un employée<br><!-- comment -->
+                 <ul>
+                  <li><strong>Méthode :</strong><code>DELETE,<strong>chemin:</strong><code>/id</code></li>
+                  <li>Réponse : boolean</li>
+                 </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+version : '2.0'
+
+services:
+   tomcat:
+      build: ./tomcat/
+      ports:
+         - 8180:8080      
+
+      volumes:
+         - web_volume:/opt/tomcat/webapps
+
+   postgresql:
+      build: ./postgresql/
+      ports:
+         - 5432:5432
+         
+      volumes:
+         - db_volume:/var/lib/postgresql
+         
+volumes:
+   db_volume:
+   web_volume:
